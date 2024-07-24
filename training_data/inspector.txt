@@ -1,0 +1,27 @@
+What is Amazon Inspector?
+Amazon Inspector is an automated vulnerability management service that continually scans 
+Amazon Elastic Compute Cloud (EC2), AWS Lambda functions, andcontainer workloads for 
+software vulnerabilities and unintended network exposure
+
+
+What are the key benefits of Amazon Inspector?
+
+Automated discovery and continual scanning that delivers near real-time vulnerability findings.
+A highly contextualized and meaningful Amazon Inspector risk score for each finding to help you set more accurate response priorities.
+Integration with AWS Security Hub and Amazon EventBridge to automate workflows and ticket routing.
+
+Can I use Amazon Inspector and Amazon Inspector Classic simultaneously in the same account?
+Yes, you can use both simultaneously in the same account.
+
+In what Regions is Amazon Inspector available?
+Amazon Inspector is available globally. Specific availability by Region.
+
+What is an Amazon Inspector finding?
+An Amazon Inspector finding is a potential security vulnerability.
+
+Do I need any agents to use Amazon Inspector?
+It depends on which resources you’re scanning. AWS Systems Manager Agent (SSM Agent) is required 
+for vulnerability scanning of Amazon EC2 instances.
+
+
+

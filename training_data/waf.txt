@@ -1,0 +1,23 @@
+What is AWS WAF?
+
+AWS WAF is a web application firewall that helps protect web applications from attacks by allowing you to configure rules that allow, 
+block, or monitor (count) web requests based on conditions that you define.
+
+How does AWS WAF block or allow traffic?
+
+As the underlying service receives requests for your web sites, it forwards those requests to AWS WAF for inspection against your rules.
+
+Can I use AWS WAF to protect web sites not hosted in AWS?
+
+Yes, AWS WAF is integrated with Amazon CloudFront, which supports custom origins outside of AWS.
+
+Which types of attacks can AWS WAF help me to stop?
+
+AWS WAF helps protects your website from common attack techniques like SQL injection and Cross-Site Scripting (XSS). 
+In addition, you can create rules that can block or rate-limit traffic from specific user-agents.
+
+Which bot mitigation capabilities are available with AWS WAF?
+AWS WAF Bot Control gives you visibility and control over common and pervasive bot traffic to your applications. With Bot Control, you can easily monitor, block, or rate-limit pervasive bots, such as scrapers, scanners, and crawlers, and you can allow common bots, such as status monitors and search engines.
+
+Does AWS WAF support IPv6?
+Yes, support for IPv6 allows the AWS WAF to inspect HTTP/S requests coming from both IPv6 and IPv4 addresses.

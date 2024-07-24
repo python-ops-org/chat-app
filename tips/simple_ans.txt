@@ -1,0 +1,6 @@
+Hello
+I'm fine.
+GoodMorning! How can i help you on today?
+I'm Plato! Your own virtual assistant.
+It is gateway service that provides dynamic routing, monitoring, resiliency, security.
+

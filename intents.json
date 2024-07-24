@@ -1,0 +1,138 @@
+{
+  "intents": [
+    {
+      "tag": "hi",
+      "patterns": [
+        "hi there",
+        "hello",
+        "haroo",
+        "yaw",
+        "wassup",
+        "hi",
+        "hey",
+        "holla",
+        "hello"
+      ],
+      "responses": [
+        
+        "Hello Sir/Madam, It is a pleasure to connect with you. What can we do to help you?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "good bye", "see you later"],
+      "responses": ["have a nice time, welcome back again", "bye bye"],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "okay",
+        "Thank you",
+        "thankyou",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "wow",
+        "great"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "you're welcome",
+        "My pleasure"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "AI",
+      "patterns": ["What is AI?"],
+      "responses": [
+        "Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
+        "AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sentiment",
+      "patterns": ["Are you sentient?"],
+      "responses": [
+        "Sort of.",
+        "By the strictest dictionary definition of the word 'sentience', I may be.",
+        "Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sapient",
+      "patterns": ["Are you sapient?"],
+      "responses": [
+        "In all probability, I am not. I'm not that sophisticated.",
+        "Do you think I am?",
+        "How would you feel about me if I told you I was?",
+        "No."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "security",
+      "patterns": ["aws security"],
+      "responses": [
+        "Amazon Inspector automatically discovers workloads, such as Amazon EC2 instances, containers, and Lambda functions, and scans them for software vulnerabilities and unintended network exposure. Read more <a href='https://aws.amazon.com/inspector/'>here</a>.<br>",
+        "GuardDuty combines ML and integrated threat intelligence from AWS and leading third parties to help protect your AWS accounts, workloads, and data. Read more <a href='https://aws.amazon.com/guardduty/'>here</a>."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "waf",
+      "patterns": ["What is AWS WAF?"],
+      "responses": [
+        "AWS WAF is a web application firewall that helps protect web applications from attacks by allowing you to configure rules that allow, block, or monitor (count) web requests based on conditions that you define."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "block",
+      "patterns": ["How does AWS WAF block or allow traffic?"],
+      "responses": [
+        "As the underlying service receives requests for your web sites, it forwards those requests to AWS WAF for inspection against your rules."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "waf hosted",
+      "patterns": ["Can I use AWS WAF to protect web sites not hosted in AWS?"],
+      "responses": [
+        "Yes, AWS WAF is integrated with Amazon CloudFront, which supports custom origins outside of AWS."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "waf stop",
+      "patterns": ["Which types of attacks can AWS WAF help me to stop?"],
+      "responses": [
+        "AWS WAF helps protect your website from common attack techniques like SQL injection and Cross-Site Scripting (XSS). In addition, you can create rules that can block or rate-limit traffic from specific user-agents."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "waf mitigation",
+      "patterns": ["Which bot mitigation capabilities are available with AWS WAF?"],
+      "responses": [
+        "AWS WAF Bot Control gives you visibility and control over common and pervasive bot traffic to your applications. With Bot Control, you can easily monitor, block, or rate-limit pervasive bots, such as scrapers, scanners, and crawlers, and you can allow common bots, such as status monitors and search engines."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "waf support",
+      "patterns": ["Does AWS WAF support IPv6?"],
+      "responses": [
+        "Yes, support for IPv6 allows the AWS WAF to inspect HTTP/S requests coming from both IPv6 and IPv4 addresses."
+      ],
+      "context": [""]
+    }
+  ]
+}
+

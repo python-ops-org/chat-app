@@ -1,0 +1,1 @@
+It is gateway service that provides dynamic routing, monitoring, resiliency, security, and more

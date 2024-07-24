@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plato</title>
+    <link rel="stylesheet" href="../static/index.css" />
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="heading">
+        <h4>Introducing Plato - ServiceMesh Chatbot!</h4>
+      </div>
+      <div class="mian1">
+        <div class="plato">
+          <h5>About Plato</h5>
+        </div>
+        <div class="para">
+          Plato Interative Live Assistant can provide you with the latest
+          information on our products & services. You can chat with Plato to get
+          information on api features,benefits, services and more.
+        </div>
+        <div class="head">What's in for you?</div>
+        <div class="subhead">
+          Ask Plato question related to servicemesh & services like -
+        </div>
+        <div class="list">
+          <ul type="circle">
+		  <li><a href="https://aws.amazon.com/inspector/features/?nc=sn&loc=2" target="_blank">What is Serverless?</a></li>
+		  <li><a href="https://aws.amazon.com/inspector/features/?nc=sn&loc=2" target="_blank">How to Configure Envoy Proxy?</a></li>
+
+
+
+            
+            <li>What is SageMaker?</li>
+            <li>What is LLM & RAG?</li>
+            <li>How to solve internal server error?</li>
+            <li>How to automate inventory creation?</li>
+            <li>How to solve build error?</li>
+            <li>How to solve deployment error?</li>
+            <li>How to ship logs to ELK?</li>
+            <li>How to renew sm certs?</li>
+            <li>How to update ciphers?</li>
+            <li>How to rotate secrets?</li>
+          </ul>
+        </div>
+        <div class="end">Experience it now!</div>
+      </div>
+    </div>
+    <div class="main" id="chatbot">
+      <!-- Chat messages will be displayed here -->
+
+      <audio src="../static/msg.mp3" class="msg_audio" id="msg_audio"></audio>
+      <audio
+        src="../static/msg_sent.mp3"
+        class="msg_audio"
+        id="msg_audio_s"
+      ></audio>
+
+      <div class="top">
+        <div class="key" id="assistant_name">
+          <img src="../static/bot.png" alt="" class="bot_img_1" />
+        </div>
+        <div class="assistant" id="assistant_description">
+          Your Personal Kotak Assistant
+        </div>
+        <div class="cross" id="cross">
+          <svg
+            width="30px"
+            height="30px"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 8L8 16M8.00001 8L16 16"
+              stroke="#ffffff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="options" id="options"></div>
+      <div class="chat" id="chat">
+        <div class="full">
+          <img src="../static/bot.png" alt="" class="bot_img" />
+          <div class="small">
+            <div>Hey, how can i help you?</div>
+          </div>
+        </div>
+        <!-- <div class="full_right">
+              <div class="small_right">
+                <div>I am still . Do you have any Question?</div>
+              </div>
+            </div> -->
+      </div>
+      <div class="bottom">
+        <div class="input">
+          <input
+            type="search"
+            placeholder="How may I help You..?"
+            name="search"
+            id="input"
+          />
+        </div>
+
+        <div class="send" id="send">
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.39969 6.32015L15.8897 3.49015C19.6997 2.22015 21.7697 4.30015 20.5097 8.11015L17.6797 16.6002C15.7797 22.3102 12.6597 22.3102 10.7597 16.6002L9.91969 14.0802L7.39969 13.2402C1.68969 11.3402 1.68969 8.23015 7.39969 6.32015Z"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              opacity="0.34"
+              d="M10.1094 13.6501L13.6894 10.0601"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="chat_circle" id="chat_circle">
+      <!-- <svg
+        fill="#5EBEC4"
+        viewBox="0 0 24 24"
+        id="chat-left-4"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="chat_svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            id="primary"
+            d="M4,3H16a2,2,0,0,1,2,2V15a2,2,0,0,1-2,2H14v2a1,1,0,0,1-.51.87A1,1,0,0,1,13,20a1,1,0,0,1-.51-.14L7.72,17H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3Z"
+            style="fill: #5ebec4"
+          ></path>
+          <path
+            id="secondary"
+            d="M17,19h3V8a1,1,0,0,1,2,0V19a2,2,0,0,1-2,2H17a1,1,0,0,1,0-2ZM15,8a1,1,0,0,0-1-1H6A1,1,0,0,0,6,9h8A1,1,0,0,0,15,8ZM5,12a1,1,0,0,0,1,1h8a1,1,0,0,0,0-2H6A1,1,0,0,0,5,12Z"
+            style="fill: #2568fb"
+          ></path>
+        </g>
+      </svg> -->
+
+      <svg
+        fill="#ffffff"
+        viewBox="0 0 256.00098 256.00098"
+        id="Flat"
+        xmlns="http://www.w3.org/2000/svg"
+        class="chat_svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <g opacity="0.2">
+            <path
+              d="M80.00049,144.00048v40a8,8,0,0,0,8,8h96.41709l39.58291,32v-128a8,8,0,0,0-8-8h-40v48a8,8,0,0,1-8,8Z"
+            ></path>
+          </g>
+          <path
+            d="M232,96.00049a16.01833,16.01833,0,0,0-16-16H184.001v-32a16.01833,16.01833,0,0,0-16-16h-128a16.01833,16.01833,0,0,0-16,16v128a7.99978,7.99978,0,0,0,13.02929,6.22119L72,153.95038l.001,30.05011a16.01833,16.01833,0,0,0,16,16h93.58789l37.38281,30.22119a7.99979,7.99979,0,0,0,13.0293-6.22119ZM66.55371,137.7793,40.001,159.24561V48.00049h128V87.98114l-.001.01935.001.01935v47.98065H71.583A7.9992,7.9992,0,0,0,66.55371,137.7793Zm122.89356,48a7.99922,7.99922,0,0,0-5.0293-1.77881H88.001l-.001-32h80.001a16.01834,16.01834,0,0,0,16-16v-40H216l.001,111.24512Z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+
+    <script>
+      function displayMessage(sender, message) {
+          const chatbot = document.getElementById('chatbot');
+          const newMessage = `<p><strong>${sender}: </strong>${message}</p>`;
+          chatbot.innerHTML += newMessage;
+      }
+
+      function sendMessage() {
+          const userInput = document.getElementById('userInput').value;
+          displayMessage('You', userInput);
+          document.getElementById('userInput').value = '';
+
+          fetch('/get_response', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: `user_input=${userInput}`,
+          })
+          .then((response) => response.json())
+          .then((data) => {
+              displayMessage(data.response);
+          });
+      }
+  </script>
+
+
+
+
+
+</body>
+
+<script src="../static/options.js"></script>
+<script src="../static/qa.js"></script>
+<script src="../static/faq.js"></script>
+<script src="../static/deliver.js"></script>
+<script src="../static/link.js"></script>
+
+<script src="../static/index.js"></script>
+
+</html>
+

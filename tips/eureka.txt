@@ -1,0 +1,1 @@
+REST-based server that is used for load balancing and failover of middle-tier services
